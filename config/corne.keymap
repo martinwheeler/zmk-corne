@@ -33,10 +33,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F            &kp P                &kp B         &kp J    &kp L                 &kp U             &kp Y    &kp BACKSPACE  &kp BSPC
-&kp LCTRL  &kp A  &kp R  &hmr LEFT_ALT S  &hmr LEFT_COMMAND T  &kp G         &kp M    &hmr RIGHT_COMMAND N  &hmr RIGHT_ALT E  &kp I    &kp O          &kp SQT
-&kp LSHFT  &kp X  &kp C  &kp D            &kp V                &kp Z         &kp K    &kp H                 &kp COMMA         &kp DOT  &kp FSLH       &kp ESC
-                         &sk LEFT_SHIFT   &kp SPACE            &kp ESCAPE    &kp RET  &sl 1                 &sk RCTRL
+&kp TAB    &kp Q  &kp W  &kp F            &kp P                     &kp B         &kp J    &kp L                 &kp U             &kp Y    &kp BACKSPACE  &kp BSPC
+&kp LCTRL  &kp A  &kp R  &hmr LEFT_ALT S  &hmr LEFT_COMMAND T       &kp G         &kp M    &hmr RIGHT_COMMAND N  &hmr RIGHT_ALT E  &kp I    &kp O          &kp SQT
+&kp LSHFT  &kp X  &kp C  &kp D            &kp V                     &kp Z         &kp K    &kp H                 &kp COMMA         &kp DOT  &kp FSLH       &kp ESC
+                         &sk LEFT_SHIFT   &hmr LS(LA(LCTRL)) SPACE  &kp ESCAPE    &kp RET  &sl 1                 &sk RCTRL
             >;
         };
 
@@ -48,19 +48,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT_SIGN     &kp HASH           &kp DOLLAR        &kp PERCENT    &kp CARET         &kp AMPERSAND         &kp ASTERISK           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp TAB          &kp EQUAL       &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp GRAVE      &kp BACKSLASH     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE              &kp ENTER              &trans
-&trans  &kp TILDE        &kp UNDERSCORE  &kp PLUS           &kp MINUS         &trans         &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans                &to 0                  &trans
-                                         &kp LGUI           &trans            &kp SPACE      &kp RET           &to 0                 &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN     &kp HASH           &hmr LG(LS(NUMBER_4)) DOLLAR  &kp PERCENT    &kp CARET         &kp AMPERSAND         &kp ASTERISK           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &kp TAB          &kp EQUAL       &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE              &kp GRAVE      &kp BACKSLASH     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE              &kp ENTER              &trans
+&trans  &kp TILDE        &kp UNDERSCORE  &kp PLUS           &kp MINUS                     &trans         &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans                &to 3                  &trans
+                                         &trans             &trans                        &trans         &trans            &to 2                 &trans
             >;
         };
 
         CtrlNum {
             bindings = <
-&trans  &trans  &kp C_PLAY_PAUSE  &kp C_PREV  &kp C_NEXT  &trans    &trans           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans  &trans
-&trans  &trans  &trans            &trans      &trans      &trans    &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans  &trans
-&trans  &trans  &trans            &trans      &trans      &trans    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans
-                                  &to 0       &trans      &trans    &trans           &trans           &trans
+&trans  &trans   &kp C_PLAY_PAUSE  &kp C_PREV  &kp C_NEXT  &kp MINUS     &kp KP_SUBTRACT  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans  &trans
+&trans  &kp TAB  &trans            &trans      &trans      &kp PLUS      &kp EQUAL        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans  &trans
+&trans  &trans   &trans            &trans      &trans      &kp KP_DOT    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans
+                                   &to 0       &trans      &trans        &trans           &trans           &trans
             >;
         };
 
