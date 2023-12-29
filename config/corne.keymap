@@ -67,10 +67,10 @@
 
         Navigate {
             bindings = <
-&trans  &trans            &trans       &trans  &trans            &trans    &trans    &trans            &trans        &trans     &trans     &trans
-&trans  &hmr LG(TAB) TAB  &kp LS(TAB)  &trans  &trans            &trans    &kp LEFT  &kp DOWN          &kp UP_ARROW  &kp RIGHT  &kp ENTER  &trans
-&trans  &to 4             &trans       &trans  &trans            &trans    &trans    &trans            &trans        &trans     &trans     &trans
-                                       &to 0   &kp LEFT_CONTROL  &trans    &trans    &kp LEFT_COMMAND  &kp LEFT_ALT
+&trans  &trans            &trans       &trans  &trans            &trans    &kp LG(LA(LEFT))  &trans            &trans        &kp LG(LA(RIGHT))  &trans     &trans
+&trans  &hmr LG(TAB) TAB  &kp LS(TAB)  &trans  &trans            &trans    &kp LEFT          &kp DOWN          &kp UP_ARROW  &kp RIGHT          &kp ENTER  &trans
+&trans  &to 4             &trans       &trans  &trans            &trans    &trans            &trans            &trans        &trans             &trans     &trans
+                                       &to 0   &kp LEFT_CONTROL  &trans    &trans            &kp LEFT_COMMAND  &kp LEFT_ALT
             >;
         };
 
