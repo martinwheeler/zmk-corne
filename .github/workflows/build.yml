@@ -4,9 +4,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger build-user-config workflow
-        uses: actions/workflow-dispatch@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Build User Config
+        uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
         with:
-          workflow: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
-          inputs:
-            archive_name: "custom_archive_name"
+          archive_name: "archive_name"
