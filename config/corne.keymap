@@ -37,7 +37,7 @@
 &kp TAB    &kp Q  &kp W  &kp F            &kp P                     &kp B         &kp J        &kp L                 &kp U             &kp Y    &kp BACKSPACE  &kp BSPC
 &kp LCTRL  &kp A  &kp R  &hmr LEFT_ALT S  &hmr LEFT_COMMAND T       &kp G         &kp M        &hmr RIGHT_COMMAND N  &hmr RIGHT_ALT E  &kp I    &kp O          &kp SQT
 &kp LSHFT  &kp X  &kp C  &kp D            &kp V                     &kp Z         &kp K        &kp H                 &kp COMMA         &kp DOT  &kp FSLH       &kp ESC
-                         &kp LEFT_SHIFT   &hmr LS(LA(LCTRL)) SPACE  &kp ESCAPE    &key_repeat  &sl 1                 &kp RCTRL
+                         &kp LEFT_SHIFT   &hmr LS(LA(LCTRL)) SPACE  &kp ESCAPE    &lt 3 ENTER  &sl 1                 &kp RCTRL
             >;
         };
 
