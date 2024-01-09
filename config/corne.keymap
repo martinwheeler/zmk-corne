@@ -67,28 +67,28 @@
 
         CtrlNum {
             bindings = <
-&trans  &kp ESCAPE  &kp C_PLAY_PAUSE  &kp C_PREV         &kp C_NEXT       &kp MINUS     &kp KP_SUBTRACT  &kp KP_NUMBER_7    &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans     &trans
-&trans  &kp TAB     &trans            &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp PLUS      &kp EQUAL        &kp KP_NUMBER_4    &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ENTER  &trans
-&trans  &trans      &trans            &trans             &trans           &kp KP_DOT    &kp KP_NUMBER_0  &kp KP_NUMBER_1    &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans     &trans
-                                      &to 0              &trans           &kp ESCAPE    &trans           &kp RIGHT_COMMAND  &kp RIGHT_ALT
+&trans  &kp ESCAPE  &kp C_PLAY_PAUSE  &kp C_PREV         &kp C_NEXT       &kp MINUS              &kp KP_SUBTRACT  &kp KP_NUMBER_7    &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans     &trans
+&trans  &kp TAB     &trans            &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp PLUS               &kp EQUAL        &kp KP_NUMBER_4    &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ENTER  &trans
+&trans  &trans      &trans            &trans             &trans           &kp KP_DOT             &kp KP_NUMBER_0  &kp KP_NUMBER_1    &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans     &trans
+                                      &to 0              &trans           &escape_layer_reset    &trans           &kp RIGHT_COMMAND  &kp RIGHT_ALT
             >;
         };
 
         Navigate {
             bindings = <
-&trans  &trans            &trans       &trans  &trans            &trans        &kp LG(LA(LEFT))  &trans            &trans        &kp LG(LA(RIGHT))  &trans     &trans
-&trans  &hmr LG(TAB) TAB  &kp LS(TAB)  &trans  &trans            &trans        &kp LEFT          &kp DOWN          &kp UP_ARROW  &kp RIGHT          &kp ENTER  &trans
-&trans  &to 4             &trans       &trans  &trans            &trans        &trans            &trans            &trans        &trans             &trans     &trans
-                                       &to 0   &kp LEFT_CONTROL  &kp ESCAPE    &trans            &kp LEFT_COMMAND  &kp LEFT_ALT
+&trans  &trans            &trans       &trans  &trans            &trans                 &kp LG(LA(LEFT))  &trans            &trans        &kp LG(LA(RIGHT))  &trans     &trans
+&trans  &hmr LG(TAB) TAB  &kp LS(TAB)  &trans  &trans            &trans                 &kp LEFT          &kp DOWN          &kp UP_ARROW  &kp RIGHT          &kp ENTER  &trans
+&trans  &to 4             &trans       &trans  &trans            &trans                 &trans            &trans            &trans        &trans             &trans     &trans
+                                       &to 0   &kp LEFT_CONTROL  &escape_layer_reset    &trans            &kp LEFT_COMMAND  &kp LEFT_ALT
             >;
         };
 
         Bluetooth {
             bindings = <
-&trans  &trans      &trans          &trans      &trans      &trans        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &bt BT_CLR  &bt BT_CLR_ALL  &bt BT_PRV  &bt BT_NXT  &trans        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans      &trans          &trans      &trans      &trans        &trans  &trans  &trans  &trans  &trans  &trans
-                                    &to 0       &trans      &kp ESCAPE    &trans  &trans  &trans
+&trans  &trans      &trans          &trans      &trans      &trans                 &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &bt BT_CLR  &bt BT_CLR_ALL  &bt BT_PRV  &bt BT_NXT  &trans                 &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &trans          &trans      &trans      &trans                 &trans  &trans  &trans  &trans  &trans  &trans
+                                    &to 0       &trans      &escape_layer_reset    &trans  &trans  &trans
             >;
         };
     };
