@@ -53,10 +53,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp Q  &kp W  &kp F            &kp P                     &kp B           &kp J        &kp L                 &kp U             &kp Y    &kp BACKSPACE  &trans
-&trans  &kp A  &kp R  &hmr LEFT_ALT S  &hmr LEFT_COMMAND T       &kp G           &kp M        &hmr RIGHT_COMMAND N  &hmr RIGHT_ALT E  &kp I    &kp O          &trans
-&trans  &kp X  &kp C  &kp D            &kp V                     &kp Z           &kp K        &kp H                 &kp COMMA         &kp DOT  &kp FSLH       &trans
-                      &kp LEFT_SHIFT   &hmr LS(LA(LCTRL)) SPACE  &lt 2 ESCAPE    &lt 3 ENTER  &sl 1                 &kp LEFT_CONTROL
+&trans  &kp Q  &kp W                &kp F            &kp P                     &kp B           &kp J        &kp L                 &kp U             &kp Y                 &kp BACKSPACE  &trans
+&trans  &kp A  &hmr LEFT_CONTROL R  &hmr LEFT_ALT S  &hmr LEFT_COMMAND T       &kp G           &kp M        &hmr RIGHT_COMMAND N  &hmr RIGHT_ALT E  &hmr RIGHT_CONTROL I  &kp O          &trans
+&trans  &kp X  &kp C                &kp D            &kp V                     &kp Z           &kp K        &kp H                 &kp COMMA         &kp DOT               &kp FSLH       &trans
+                                    &kp LEFT_SHIFT   &hmr LS(LA(LCTRL)) SPACE  &lt 2 ESCAPE    &lt 3 ENTER  &sl 1                 &kp LEFT_CONTROL
             >;
         };
 
